@@ -1,45 +1,7 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "D:\\5ire\\Wrapped 5ire Coin\\contracts\\app\\lockContract.sol": {
-      "lastModificationDate": 1732256106627,
-      "contentHash": "80569fe35fbb6a02772baeb9f272b3ca",
-      "sourceName": "contracts/app/lockContract.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "node_modules/@wandevs/message/contracts/app/WmbApp.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.22"
-      ],
-      "artifacts": [
-        "lockContract"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@wandevs\\message\\contracts\\app\\WmbApp.sol": {
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@wandevs\\message\\contracts\\app\\WmbApp.sol": {
       "lastModificationDate": 1730109027098,
       "contentHash": "17646cdab87fdb0f3a22746f727cc376",
       "sourceName": "node_modules/@wandevs/message/contracts/app/WmbApp.sol",
@@ -80,343 +42,7 @@
         "WmbApp"
       ]
     },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@wandevs\\message\\contracts\\interfaces\\IWmbGateway.sol": {
-      "lastModificationDate": 1730109027129,
-      "contentHash": "180aa2d86d358124a47fd46683e49e2f",
-      "sourceName": "node_modules/@wandevs/message/contracts/interfaces/IWmbGateway.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IEIP5164.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IWmbGateway"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@wandevs\\message\\contracts\\interfaces\\IWmbReceiver.sol": {
-      "lastModificationDate": 1730109027130,
-      "contentHash": "a7d90e8e84775054179decce17849265",
-      "sourceName": "node_modules/@wandevs/message/contracts/interfaces/IWmbReceiver.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IWmbReceiver"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\access\\AccessControl.sol": {
-      "lastModificationDate": 1730109081936,
-      "contentHash": "4c80b7fdf559a9a348e832a57d072a0b",
-      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IAccessControl.sol",
-        "../utils/Context.sol",
-        "../utils/introspection/ERC165.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "AccessControl"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol": {
-      "lastModificationDate": 1730109082181,
-      "contentHash": "f0cedd674b4863ee90d1521a92ab82df",
-      "sourceName": "@openzeppelin/contracts/proxy/utils/Initializable.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "Initializable"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@wandevs\\message\\contracts\\interfaces\\IEIP5164.sol": {
-      "lastModificationDate": 1730109027124,
-      "contentHash": "5b17508c6c5fc48ea7ce9be873033fca",
-      "sourceName": "node_modules/@wandevs/message/contracts/interfaces/IEIP5164.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "BatchedMessageDispatcher",
-        "IEIP5164",
-        "MessageDispatcher",
-        "MessageExecutor",
-        "SingleMessageDispatcher"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1730109081967,
-      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "Context"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
-      "lastModificationDate": 1730109081994,
-      "contentHash": "7c03c1e37c3dc24eafb76dc2b8a5c3a6",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IERC165.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "ERC165"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\access\\IAccessControl.sol": {
-      "lastModificationDate": 1730109082100,
-      "contentHash": "6f7fac9fa0df6004375e18b7ff7edf4e",
-      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IAccessControl"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
-      "lastModificationDate": 1730109082120,
-      "contentHash": "bf0119eb2a570f219729ff38b6cd1df8",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IERC165"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
       "lastModificationDate": 1730109082015,
       "contentHash": "38910c3dfa5e3778fac8888b1d714084",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
@@ -457,7 +83,343 @@
         "ERC20"
       ]
     },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol": {
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\access\\AccessControl.sol": {
+      "lastModificationDate": 1730109081936,
+      "contentHash": "4c80b7fdf559a9a348e832a57d072a0b",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@wandevs\\message\\contracts\\interfaces\\IWmbGateway.sol": {
+      "lastModificationDate": 1730109027129,
+      "contentHash": "180aa2d86d358124a47fd46683e49e2f",
+      "sourceName": "node_modules/@wandevs/message/contracts/interfaces/IWmbGateway.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IEIP5164.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWmbGateway"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@wandevs\\message\\contracts\\interfaces\\IWmbReceiver.sol": {
+      "lastModificationDate": 1730109027130,
+      "contentHash": "a7d90e8e84775054179decce17849265",
+      "sourceName": "node_modules/@wandevs/message/contracts/interfaces/IWmbReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWmbReceiver"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1730109082181,
+      "contentHash": "f0cedd674b4863ee90d1521a92ab82df",
+      "sourceName": "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1730109081967,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
+      "lastModificationDate": 1730109081994,
+      "contentHash": "7c03c1e37c3dc24eafb76dc2b8a5c3a6",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\access\\IAccessControl.sol": {
+      "lastModificationDate": 1730109082100,
+      "contentHash": "6f7fac9fa0df6004375e18b7ff7edf4e",
+      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1730109082120,
+      "contentHash": "bf0119eb2a570f219729ff38b6cd1df8",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@wandevs\\message\\contracts\\interfaces\\IEIP5164.sol": {
+      "lastModificationDate": 1730109027124,
+      "contentHash": "5b17508c6c5fc48ea7ce9be873033fca",
+      "sourceName": "node_modules/@wandevs/message/contracts/interfaces/IEIP5164.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BatchedMessageDispatcher",
+        "IEIP5164",
+        "MessageDispatcher",
+        "MessageExecutor",
+        "SingleMessageDispatcher"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol": {
       "lastModificationDate": 1730109081974,
       "contentHash": "267d92fe4de67b1bdb3302c08f387dbf",
       "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
@@ -495,43 +457,7 @@
         "IERC721Errors"
       ]
     },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
-      "lastModificationDate": 1730109082125,
-      "contentHash": "8f19f64d2adadf448840908bbaf431c8",
-      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-      "solcConfig": {
-        "version": "0.8.22",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IERC20"
-      ]
-    },
-    "D:\\5ire\\Wrapped 5ire Coin\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
       "lastModificationDate": 1730109082126,
       "contentHash": "794db3115001aa372c79326fcfd44b1f",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
@@ -569,10 +495,46 @@
         "IERC20Metadata"
       ]
     },
-    "D:\\5ire\\Wrapped 5ire Coin\\contracts\\app\\W5ire.sol": {
-      "lastModificationDate": 1732251273525,
-      "contentHash": "9b006a74e1dae224a641c07320ceadf1",
-      "sourceName": "contracts/app/W5ire.sol",
+    "D:\\5ire\\Wanchain - 5ire Integration\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1730109082125,
+      "contentHash": "8f19f64d2adadf448840908bbaf431c8",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\contracts\\app\\lockContract.sol": {
+      "lastModificationDate": 1732615470151,
+      "contentHash": "05ff05183ac8b80a9e3cbc8a450e5adf",
+      "sourceName": "contracts/app/lockContract.sol",
       "solcConfig": {
         "version": "0.8.22",
         "settings": {
@@ -598,17 +560,16 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         "node_modules/@wandevs/message/contracts/app/WmbApp.sol"
       ],
       "versionPragmas": [
         "^0.8.22"
       ],
       "artifacts": [
-        "W5ire"
+        "lockContract"
       ]
     },
-    "D:\\5ire\\Wrapped 5ire Coin\\contracts\\app\\test.sol": {
+    "D:\\5ire\\Wanchain - 5ire Integration\\contracts\\app\\test.sol": {
       "lastModificationDate": 1732251864615,
       "contentHash": "2726b8b7789476c10a916a7345b1bc7a",
       "sourceName": "contracts/app/test.sol",
@@ -642,6 +603,81 @@
       ],
       "artifacts": [
         "Test"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\contracts\\app\\FireERC20.sol": {
+      "lastModificationDate": 1733300763083,
+      "contentHash": "9e28a2b4ed88689b6aef93ff4090a98a",
+      "sourceName": "contracts/app/FireERC20.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "node_modules/@wandevs/message/contracts/app/WmbApp.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.22"
+      ],
+      "artifacts": [
+        "FireERC20"
+      ]
+    },
+    "D:\\5ire\\Wanchain - 5ire Integration\\contracts\\app\\bug1.sol": {
+      "lastModificationDate": 1733396385723,
+      "contentHash": "c4a08515f95db499614fc52310e1ba6f",
+      "sourceName": "contracts/app/bug1.sol",
+      "solcConfig": {
+        "version": "0.8.22",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.22"
+      ],
+      "artifacts": [
+        "Example"
       ]
     }
   }

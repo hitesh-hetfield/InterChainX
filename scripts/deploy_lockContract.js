@@ -1,12 +1,14 @@
 const hre = require("hardhat");
 
 async function main() {
-//   const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider
-//   const deployerAddress = await deployer.getAddress();    // Retrieve the address
-//   console.log('Deploying on', hre.network.name, 'with account', deployerAddress);
+  const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider
+  const deployerAddress = await deployer.getAddress();    // Retrieve the address
+  console.log('Deploying on', hre.network.name, 'with account', deployerAddress);
+  
+  const gateawayAddress5ire = process.env.gateawayAddress5ire;
 
   const lock = await hre.ethers.getContractFactory("lockContract");
-  const lockContract = await lock.deploy("0x850b74A3Cd5edeaD1d09c4ce39356ED681709C1c", "0x30de9d1d358ff1b60fb8057235aac35e23b7650f"); //5ire
+  const lockContract = await lock.deploy(deployer, "0xDDddd58428706FEdD013b3A761c6E40723a7911d");
   
   await lockContract.waitForDeployment();      // Wait for deployment
   console.log("Contract deployed to:", lockContract.target);  // Access the contract address directly
