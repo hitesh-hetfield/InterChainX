@@ -5,6 +5,9 @@ async function main() {
   const deployerAddress = await deployer.getAddress();    // Retrieve the address
   console.log('Deploying on', hre.network.name, 'with account', deployerAddress);
 
+  const contracts = getContracts(network);
+  
+
   const gateawayAddressPolygon = process.env.gateawayAddressPolygon;
 
   const unlock = await hre.ethers.getContractFactory("FireERC20");
