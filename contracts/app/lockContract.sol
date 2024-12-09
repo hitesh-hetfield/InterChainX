@@ -14,7 +14,7 @@ contract lockContract is WmbApp {
     constructor (address _admin, address _wmbGateway) {
         initialize(_admin, _wmbGateway); 
     }
-    
+
     /* Check the balance of a particular account */
     function balanceOf(address user) public view returns(uint256) {
         return _balances[user];
@@ -27,16 +27,16 @@ contract lockContract is WmbApp {
         address fromSC
     ) internal override {
         (address to, uint256 amount) = abi.decode(data, (address, uint256 ));
-        _withdraw(to, amount);
 
+        _balances[to] -= amount;
+        totalSupply -= amount;
+
+        _withdraw(to, amount);
         emit coinsReleased(messageId, fromChainId, to, amount, fromSC);
     }
 
     function _withdraw(address to, uint256 amount) private {
         require(_balances[to] >= amount, "Amount cannot exceed deposited balance");
-
-        _balances[to] -= amount;
-        totalSupply -= amount;
 
         payable(to).transfer(amount);
     }
