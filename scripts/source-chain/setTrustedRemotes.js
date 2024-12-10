@@ -16,11 +16,11 @@ async function main() {
     contracts.lockContract
   );
 
-  const tx = await lockContract.setTrustedRemotes([contracts.chainId], [contracts.wmbGateway], [true]);
+  const tx = await lockContract.setTrustedRemotes([2147484614], ["0x21F49083CDb15e33361AdcB32e5C677616fE36c6"], [true]);
 
   await tx.wait();
   console.log("Trusted remote set");
-  
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
@@ -29,3 +29,5 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+

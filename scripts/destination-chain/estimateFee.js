@@ -9,18 +9,20 @@ async function main() {
   const network = hre.network.name;
   const contracts = getContracts(network);
 
-  const LockContract = await hre.ethers.getContractFactory(
-    "lockContract"
+  const UnlockContract = await hre.ethers.getContractFactory(
+    "FireERC20"
   );
-  const lockContract = LockContract.attach(
-    contracts.lockContract
+  const unlockContract = UnlockContract.attach(
+    contracts.unlockContract
   );
 
-  const tx = await lockContract.setTrustedRemotes([contracts.chainId], [contracts.wmbGateway], [true]);
+  const tx = await unlockContract.estimateFee(
+    1073741853,
+    300000
+    );
 
-  await tx.wait();
-  console.log("Trusted remote set");
-  
+    console.log("Result:", tx);
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
@@ -29,3 +31,5 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+

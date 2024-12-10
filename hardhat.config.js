@@ -31,7 +31,7 @@ module.exports = {
       chainId: 11155111,
       accounts: account_pvt_key
     },
-    polygon: {
+    amoy: {
       url: "https://rpc-amoy.polygon.technology/",
       chainId: 80002,
       accounts: account_pvt_key
@@ -50,7 +50,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       thunder: process.env.THUNDER_API_KEY !== undefined ? [process.env.THUNDER_API_KEY] : [],
-      polygon: process.env.POLYGON_API_KEY !== undefined ? [process.env.POLYGON_API_KEY] : [],
+      amoy: process.env.POLYGON_API_KEY !== undefined ? [process.env.POLYGON_API_KEY] : [],
       qa: process.env.THUNDER_API_KEY !== undefined ? [process.env.THUNDER_API_KEY] : [],
     },
   customChains: [
@@ -79,7 +79,7 @@ module.exports = {
       //   }
       // },
       {
-        network: "polygon",
+        network: "amoy",
         chainId: 80002,
         urls: {
           apiURL: "https://api-amoy.polygonscan.com/api",

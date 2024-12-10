@@ -1,5 +1,5 @@
 const hre = require("hardhat");
-const { getContracts } = require("../utils");
+const { getContracts, saveContract } = require("../utils");
 
 async function main() {
   const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider
@@ -15,7 +15,9 @@ async function main() {
   const lockContract = LockContract.attach(
     contracts.lockContract
   );
-  
+
+  const tx = await lockContract.trustedRemotes(2147484614, "0x21F49083CDb15e33361AdcB32e5C677616fE36c6");
+  console.log("Return value:", tx);
 
 }
 

@@ -4,10 +4,12 @@ const { getContracts, saveContract } = require("../utils");
 async function main() {
   const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider
   const deployerAddress = await deployer.getAddress();    // Retrieve the address
-  console.log('Deploying on', hre.network.name, 'with account', deployerAddress);
-  
   const network = hre.network.name;
+
+  console.log('Deploying on', network, 'with account', deployerAddress);
+  
   const contracts = getContracts(network);
+  console.log(contracts);
 
   const lock = await hre.ethers.getContractFactory("lockContract");
   const lockContract = await lock.deploy(deployer.address, contracts.wmbGateway);
