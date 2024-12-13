@@ -25,7 +25,7 @@ async function main() {
   
   console.log("Estimate Fee:", estimateFee);
   // Amount of native token to lock
-  const nativeTokenAmount = ethers.parseUnits("2", 18);
+  const nativeTokenAmount = ethers.parseUnits("5", 18);
 
   // estimate fee + number of coins to lock
   const totalAmount = BigInt(estimateFee) + BigInt(nativeTokenAmount);
@@ -33,10 +33,11 @@ async function main() {
   const tx = await lockContract.lockCoin(
     // Chain id of destination chain 
     2147484614, 
-    // Address of the user
-    "0x21F49083CDb15e33361AdcB32e5C677616fE36c6",
     // Contract address from destination chain - ERC20
+    "0x21F49083CDb15e33361AdcB32e5C677616fE36c6",
+    // Address of the user
     "0x850b74A3Cd5edeaD1d09c4ce39356ED681709C1c",
+    // gas limit
     300000,
     // Amount of native token + fee to lock
     { value: totalAmount }
