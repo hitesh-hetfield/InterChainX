@@ -30,6 +30,7 @@ async function checkBalance() {
     console.log("User Coins Locked:", formattedBalance);
 }
 
+// Handling errors
 checkBalance((error) => {
     console.error(error);
     process.exitCode=1

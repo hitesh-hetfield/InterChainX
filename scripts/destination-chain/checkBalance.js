@@ -29,6 +29,7 @@ async function checkBalance() {
     console.log("User Balance:", formattedBalance);
 }
 
+// Handling errors
 checkBalance().catch((error) => {
     console.error(error);
     process.exitCode = 1;

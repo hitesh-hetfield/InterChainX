@@ -49,5 +49,8 @@ async function getTxData() {
     }
 }
 
-  
-getTxData();
+// Handling errors
+getTxData().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});

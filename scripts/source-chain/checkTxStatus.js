@@ -49,4 +49,8 @@ async function checkTxStatus() {
     }
 }
 
-checkTxStatus();
+// Handling errors
+checkTxStatus().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});
