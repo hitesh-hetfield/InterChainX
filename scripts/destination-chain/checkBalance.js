@@ -4,9 +4,6 @@ const { getContracts, saveContract } = require("../utils");
 
 async function checkBalance() {
 
-
-    // console.log("Ethers object:", ethers);
-
     const deployer = await hre.ethers.provider.getSigner();
     const deployerAddress = await deployer.getAddress();
     

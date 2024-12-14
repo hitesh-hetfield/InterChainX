@@ -1,8 +1,23 @@
 const axios= require("axios");
+const fs = require("fs");
+const path = require("path");
 
 async function getTxData() {
 
-    const txHash = "0x760ed7baa17ed0d3cda5960a170a3d10f29ba71c838a59d3f5f8aec90522c3d1";
+    const filepath = path.join(
+        __dirname,
+        "../../tx-hashes/dev.amoy.tx-hash.json"
+    );
+
+    const txData = JSON.parse(fs.readFileSync(
+        filepath,
+        "utf-8"
+        )
+    );
+
+    // Change the index to check status of different txs
+    const txHash = txData[1].txHash;
+    const coinsUnlocked = txData[1].coinsUnlocked;
     const apiUrl = `https://testnet.wanscan.org/api/cc/msg/tx?sendTxHash=${txHash}`;
   
     try {
@@ -15,13 +30,14 @@ async function getTxData() {
         const formattedDate = new Date(transaction.timestamp * 1000);
 
         console.log("Timestamp:", formattedDate.toLocaleString());
-        console.log("Message ID:", transaction.msgId);
+        console.log("Tx Hash:", txHash);
+        console.log("Coins Unlocked:", coinsUnlocked);
+        console.log("Status:", transaction.status);
+        console.log("Sender Address:", transaction.from);
         console.log("From Chain:", transaction.fromChain);
         console.log("To Chain:", transaction.toChain);
-        console.log("Sender Address:", transaction.from);
-        console.log("Send Transaction Hash:", transaction.sendTxHash);
-        console.log("Status:", transaction.status);
         console.log("Gas Fee:", transaction.fee.value, transaction.fee.unit);
+        console.log("Message ID:", transaction.msgId);
     
       } catch (error) {
         

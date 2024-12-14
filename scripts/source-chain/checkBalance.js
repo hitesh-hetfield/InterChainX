@@ -8,7 +8,6 @@ async function checkBalance() {
     const deployer = await hre.ethers.provider.getSigner();
     const deployerAddress = await deployer.getAddress();
 
-
     const network = hre.network.name;
     const contracts = getContracts(network);
 

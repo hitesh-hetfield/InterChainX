@@ -1,7 +1,8 @@
 const hre = require("hardhat");
 const { ethers } = require("ethers");
-const { getContracts, saveContract } = require("../utils");
-const axios = require("axios");
+const { getContracts } = require("../utils");
+const fs = require("fs");
+const path = require("path");
 
 async function main() {
   const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider
@@ -10,6 +11,7 @@ async function main() {
   
   const network = hre.network.name;
   const contracts = getContracts(network);
+  const env = process.env.NODE_ENV;
 
   const UnlockContract = await hre.ethers.getContractFactory(
     "FireERC20"
@@ -25,14 +27,15 @@ async function main() {
 
   // Call the checkBalance function to see if the address you're sending the tokens to
   // has enough coins locked in the source chain
-  const unlockAmount = ethers.parseEther("1", 18);
+  const unlockAmount = ethers.parseEther("0.1", 18);
 
   const tx = await unlockContract.unlockCoins(
     // Source chain Id
     1073741853,
     // Contract address from source chain - Native Coin
     "0x7A0d8C7347D1CFfeB91264fD299BaEC2302990be",
-    // Address of the user (Must have native coins locked in the smart contract)
+    // Address of the user 
+    // (Must have native coins locked in the smart contract on the source chain)
     "0x850b74A3Cd5edeaD1d09c4ce39356ED681709C1c",
     // Amount to be unlock
     unlockAmount,
@@ -46,6 +49,32 @@ async function main() {
 
   await tx.wait();
   console.log("Transaction hash:", tx.hash);
+  
+  // Storing tx hashes
+  const unlockTxs = {
+    txHash: tx.hash,
+    coinsUnlocked: ethers.formatEther(unlockAmount).toString()
+  };
+
+  const filepath = path.join(
+    __dirname, 
+    `../../tx-hashes/${env}.${network}.tx-hash.json`
+  );
+
+  const existingTxs = fs.existsSync(filepath) 
+    ? JSON.parse(fs.readFileSync(
+      filepath, 
+      "utf-8")
+    ) 
+    : [];
+
+  existingTxs.push(unlockTxs);
+
+  fs.writeFileSync(
+    filepath,
+    JSON.stringify(existingTxs, null, 4)
+  );
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere

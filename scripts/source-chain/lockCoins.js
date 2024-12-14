@@ -1,14 +1,17 @@
 const hre = require("hardhat");
 const { ethers } = require("ethers");
-const { getContracts, saveContract } = require("../utils");
+const { getContracts } = require("../utils");
+const fs = require("fs");
+const path = require("path");
 
-async function main() {
+async function lockCoins() {
   const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider
   const deployerAddress = await deployer.getAddress();    // Retrieve the address
   console.log('Deploying on', hre.network.name, 'with account', deployerAddress);
   
   const network = hre.network.name;
   const contracts = getContracts(network);
+  const env = process.env.NODE_ENV;
 
   const LockContract = await hre.ethers.getContractFactory(
     "lockContract"
@@ -46,13 +49,35 @@ async function main() {
   await tx.wait();
   console.log("Coins Locked Tx:", tx.hash);
 
+  // Storing tx hashes
+  const lockTxs = {
+    txHash: tx.hash,
+    coinsLocked: ethers.formatEther(nativeTokenAmount).toString()
+  };
+
+  const filepath = path.join(
+    __dirname,
+    `../../tx-hashes/${env}.${network}.tx-hash.json`
+  );
+
+  const existingTxs = fs.existsSync(filepath)
+  ? JSON.parse(fs.readFileSync(
+    filepath, 
+    "utf-8")
+  )
+  : [];
+
+  existingTxs.push(lockTxs);
+
+  fs.writeFileSync(
+    filepath,
+    JSON.stringify(existingTxs, null, 4)
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((error) => {
+lockCoins().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-
-
