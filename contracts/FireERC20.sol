@@ -2,7 +2,7 @@
 pragma solidity ^0.8.22;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "node_modules/@wandevs/message/contracts/app/WmbApp.sol";
+import {WmbApp} from "@wandevs/message/contracts/app/WmbApp.sol";
 
 contract FireERC20 is WmbApp, ERC20 {
 
