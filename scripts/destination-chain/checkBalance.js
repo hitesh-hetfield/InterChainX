@@ -1,6 +1,6 @@
 const hre  = require("hardhat");
 const { ethers } = require("ethers");
-const { getContracts, saveContract } = require("../utils");
+const { getContracts } = require("../utils");
 
 async function checkBalance() {
 

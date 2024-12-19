@@ -16,8 +16,8 @@ async function checkTxStatus() {
     );
 
     // change the index to check status of different txs
-    const txHash = txData[0].txHash;
-    const coinsLocked = txData[0].coinsLocked;
+    const txHash = txData[3].txHash;
+    const coinsLocked = txData[3].coinsLocked;
     const apiUrl = `https://testnet.wanscan.org/api/cc/msg/tx?sendTxHash=${txHash}`;
 
     try {
@@ -31,7 +31,7 @@ async function checkTxStatus() {
 
         console.log("Timestamp:", formattedDate.toLocaleString());
         console.log("Tx Hash:", txHash);
-        console.log("Coins Unlocked:", coinsLocked);
+        console.log("Coins Locked:", coinsLocked);
         console.log("Status:", transaction.status);
         console.log("Sender Address:", transaction.from);
         console.log("From Chain:", transaction.fromChain);

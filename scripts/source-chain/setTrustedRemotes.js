@@ -16,7 +16,11 @@ async function setTrustedRemotes() {
     contracts.lockContract
   );
 
-  const tx = await lockContract.setTrustedRemotes([2147484614], ["0x21F49083CDb15e33361AdcB32e5C677616fE36c6"], [true]);
+  const tx = await lockContract.setTrustedRemotes(
+    [2147484614], 
+    ["0xeE02101Da362c9bFc616F72AbF8301Ba94f3C4fe"], 
+    [true]
+  );
 
   await tx.wait();
   console.log("Trusted remote set");

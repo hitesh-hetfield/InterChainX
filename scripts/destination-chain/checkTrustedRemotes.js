@@ -16,7 +16,9 @@ async function checkTrustedRemotes() {
     contracts.unlockContract
   );
 
-  const tx = await unlockContract.trustedRemotes(1073741853, "0x7A0d8C7347D1CFfeB91264fD299BaEC2302990be");
+  const tx = await unlockContract.trustedRemotes(
+    1073741853, 
+    "0x0fEc43F72F1CFC634302e9BdD3aF84b6Ec808f4d");
   console.log("Return value:", tx);
 
 }

@@ -49,7 +49,7 @@ contract lockContract is WmbApp {
         uint256 gasLimit
     ) public payable {
         uint gasFee = estimateFee(toChainId, gasLimit);
-        require(msg.value > amount + uint256(gasFee), "Not enough amount to lock");
+        require(msg.value >= amount + uint256(gasFee), "Not enough amount to lock");
 
         _balances[msg.sender] += amount;
         totalSupply += amount;

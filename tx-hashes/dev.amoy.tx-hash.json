@@ -6,5 +6,13 @@
     {
         "txHash": "0xc22d8d18ba50604ea40db3409edcc4f0711b9478f890b8414c0afd23c81d411e",
         "coinsUnlocked": "0.1"
+    },
+    {
+        "txHash": "0xe741f65dc44673cb6a34169d6e18ee3f93d5c894e98a8e5070d3203b8bb8c53e",
+        "coinsUnlocked": "0.2"
+    },
+    {
+        "txHash": "0x9a750e6072299b222474ea3cec657af5373c1641abb4d35c2b4711d224c9a172",
+        "coinsUnlocked": "0.2"
     }
 ]

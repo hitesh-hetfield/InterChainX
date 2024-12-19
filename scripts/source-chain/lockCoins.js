@@ -37,9 +37,11 @@ async function lockCoins() {
     // Chain id of destination chain 
     2147484614, 
     // Contract address from destination chain - ERC20
-    "0x21F49083CDb15e33361AdcB32e5C677616fE36c6",
+    "0xeE02101Da362c9bFc616F72AbF8301Ba94f3C4fe",
     // Address of the user
     "0x850b74A3Cd5edeaD1d09c4ce39356ED681709C1c",
+    // Amount of coins to lock
+    BigInt(nativeTokenAmount),
     // gas limit
     300000,
     // Amount of native token + fee to lock

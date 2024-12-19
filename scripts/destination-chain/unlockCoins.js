@@ -27,13 +27,13 @@ async function unlockCoins() {
 
   // Call the checkBalance function to see if the address you're sending the tokens to
   // has enough coins locked in the source chain
-  const unlockAmount = ethers.parseEther("0.1", 18);
+  const unlockAmount = ethers.parseEther("0.2", 18);
 
   const tx = await unlockContract.unlockCoins(
     // Source chain Id
     1073741853,
     // Contract address from source chain - Native Coin
-    "0x7A0d8C7347D1CFfeB91264fD299BaEC2302990be",
+    "0x0fEc43F72F1CFC634302e9BdD3aF84b6Ec808f4d",
     // Address of the user 
     // (Must have native coins locked in the smart contract on the source chain)
     "0x850b74A3Cd5edeaD1d09c4ce39356ED681709C1c",
