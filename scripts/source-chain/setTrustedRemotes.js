@@ -1,5 +1,5 @@
 const hre = require("hardhat");
-const { getContracts, saveContract } = require("../utils");
+const { getContracts } = require("../utils");
 
 async function setTrustedRemotes() {
   const deployer = await hre.ethers.provider.getSigner(); // Get the signer from provider

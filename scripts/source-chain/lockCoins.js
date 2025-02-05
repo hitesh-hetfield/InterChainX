@@ -26,7 +26,7 @@ async function lockCoins() {
     300000
     );
   
-  console.log("Estimate Fee:", estimateFee);
+  console.log("Estimate Fee:", hre.ethers.formatEther(estimateFee).toString());
   // Amount of native token to lock
   const nativeTokenAmount = ethers.parseUnits("5", 18);
 

@@ -16,8 +16,8 @@ async function checkTxStatus() {
     );
 
     // change the index to check status of different txs
-    const txHash = txData[3].txHash;
-    const coinsLocked = txData[3].coinsLocked;
+    const txHash = txData[6].txHash;
+    const coinsLocked = txData[6].coinsLocked;
     const apiUrl = `https://testnet.wanscan.org/api/cc/msg/tx?sendTxHash=${txHash}`;
 
     try {

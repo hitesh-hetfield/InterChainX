@@ -25,8 +25,6 @@ async function main() {
     address: lockContract.target,
     constructorArguments: [deployer.address, contracts.wmbGateway],
   });
-
-
 }
 
 // Handling errors

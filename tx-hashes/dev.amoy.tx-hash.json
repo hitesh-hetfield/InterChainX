@@ -14,5 +14,17 @@
     {
         "txHash": "0x9a750e6072299b222474ea3cec657af5373c1641abb4d35c2b4711d224c9a172",
         "coinsUnlocked": "0.2"
+    },
+    {
+        "txHash": "0xf5d6864fe3bc91a591d1b1244e7641f098e3155cd0388707bf83d3a97dbdaeff",
+        "coinsUnlocked": "0.2"
+    },
+    {
+        "txHash": "0x54b8973b0570210a8da878bddcb49a83be0c0bcc7f29af1fceef949a1405620a",
+        "coinsUnlocked": "10.0"
+    },
+    {
+        "txHash": "0x4a07173d378a6011b223932f8879321c72d4ed63814982bf4c3df6f55ce68297",
+        "coinsUnlocked": "5.0"
     }
 ]

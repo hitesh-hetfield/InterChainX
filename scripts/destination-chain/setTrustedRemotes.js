@@ -18,7 +18,7 @@ async function setTrustedRemotes() {
 
   const tx = await unlockContract.setTrustedRemotes(
     [1073741853], 
-    ["0x0fEc43F72F1CFC634302e9BdD3aF84b6Ec808f4d"], 
+    ["0x373085e45B03db364258aEC125355C2997F223E3"], 
     [true]
   );
 

@@ -51,7 +51,7 @@ module.exports = {
     apiKey: {
       thunder: process.env.THUNDER_API_KEY !== undefined ? [process.env.THUNDER_API_KEY] : [],
       amoy: process.env.POLYGON_API_KEY !== undefined ? [process.env.POLYGON_API_KEY] : [],
-      qa: process.env.THUNDER_API_KEY !== undefined ? [process.env.THUNDER_API_KEY] : [],
+      qa: process.env.THUNDER_API_KEY !== undefined ? [process.env.THUNDER_API_KEY] : []
     },
   customChains: [
     {
